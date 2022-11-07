@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PostReqest extends FormRequest
+class PostRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -14,8 +14,8 @@ class PostReqest extends FormRequest
     public function rules()
     {
         return [
-            'post.title'=>'required|string|max:100',
-            'post.body'=>'required|string|max:4000',
+            'post.title' => 'required|string|max:100',
+            'post.body' => 'required|string|max:4000',
         ];
     }
 }

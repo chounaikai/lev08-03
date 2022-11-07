@@ -9,7 +9,7 @@
     </head>
     <body class="antialiased">
         <h1>Blog Name</h1>
-            <form　action="/posts/{{ $post->id }}" method="POST">
+            <form action="/posts/{{ $post->id }}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="title">
